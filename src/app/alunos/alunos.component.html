@@ -2,7 +2,7 @@
 <hr>
 
 <form>
-    <p>Nome:* <input type="text" name="nome" [(ngModel)]="aluno.nome" required></p>
+    <p>Nome:* <input type="text" name="nome" [(ngModel)]="aluno.nome"></p>
     <p>Idade:* <input type="number" name="idade" required min=0 [(ngModel)]="aluno.idade"></p>
     <button type="button" (click)="cadastrar()">Cadastrar</button>
 </form>
@@ -13,7 +13,7 @@
 
 <table>
     <tr>
-        <th>ID</th>
+        <th>#ID</th>
         <th>Nome</th>
         <th>Idade</th>
         <th>Ações</th>
